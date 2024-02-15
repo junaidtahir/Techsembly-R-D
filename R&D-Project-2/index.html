@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax effects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="panels">
+    <div class="panel">
+        <div class="panel__text">hey</div>
+        <div class="panel__title">Let's</div>
+        <div class="panel__text">dance</div>
+    </div>
+    <div class="panel">
+        <div class="panel__text">give</div>
+        <div class="panel__title">take</div>
+        <div class="panel__text">recive</div>
+    </div>
+    <div class="panel">
+        <div class="panel__text">experience</div>
+        <div class="panel__title">it</div>
+        <div class="panel__text">today</div>
+    </div>
+    <div class="panel">
+        <div class="panel__text">give</div>
+        <div class="panel__title">all</div>
+        <div class="panel__text">you can</div>
+    </div>
+    <div class="panel">
+        <div class="panel__text">life</div>
+        <div class="panel__title">in</div>
+        <div class="panel__text">motion</div>
+    </div>
+  </div>
+  <script>
+    const panels = document.querySelectorAll('.panel');
+    function toggleOpen() {
+      this.classList.toggle('is-open');
+    }
+    function toggleActive(e) {
+      if (e.propertyName.includes('flex')) {
+        this.classList.toggle('is-active');
+      }
+    }
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+  </script>
+</body>
+</html>
