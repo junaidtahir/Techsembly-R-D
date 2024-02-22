@@ -1,13 +1,24 @@
 <div class="row">
-    <div class="col-xs-12">
-        <p>Add new Servers or blueprints!</p>
-        <label>Server Name</label>
-        <input type="text" class="form-control" #serverNameInput>
-        <label>Server Content</label>
-        <input type="text" class="form-control" #newServerContentInput>
-        <br>
-        <button class="btn btn-primary" (click)="onServerAdded(serverNameInput)">Add Server</button>
-        <button class="btn btn-primary ml-3" (click)="onBlueprintAdded(serverNameInput)">Add Server Blueprint</button>
-        <button class="btn btn-danger ml-3" (click)="onServersDeleted()">Clear Servers</button>
-    </div>
+  <div class="col-xs-12">
+    <p>Add new Servers or blueprints!</p>
+    <label>Server Name</label>
+    <!--<input type="text" class="form-control" [(ngModel)]="newServerName">-->
+    <input
+      type="text"
+      class="form-control"
+      #serverNameInput>
+    <label>Server Content</label>
+    <!--<input type="text" class="form-control" [(ngModel)]="newServerContent">-->
+    <input
+      type="text"
+      class="form-control"
+      #serverContentInput>
+    <br>
+    <button
+      class="btn btn-primary"
+      (click)="onAddServer(serverNameInput)">Add Server</button>
+    <button
+      class="btn btn-primary"
+      (click)="onAddBlueprint(serverNameInput)">Add Server Blueprint</button>
+  </div>
 </div>
