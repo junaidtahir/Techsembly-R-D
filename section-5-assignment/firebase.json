@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/cmp-databinding-assignment-solution/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
