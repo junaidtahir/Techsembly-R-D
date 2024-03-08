@@ -5,14 +5,17 @@ import { LoggingService } from "./logging.service";
 export class AccountsService {
     accounts = [
         {
+          id: 1,
           name: 'Master Account',
           status: 'active'
         },
         {
+          id: 2,
           name: 'Testaccount',
           status: 'inactive'
         },
         {
+          id: 3,
           name: 'Hidden Account',
           status: 'unknown'
         }
@@ -22,7 +25,20 @@ export class AccountsService {
       constructor(private loggingService: LoggingService){}
       
       addAccount(name: string, status: string) {
-        this.accounts.push({name: name, status: status});
+        let newId = this.accounts.length+1;
+        this.accounts.push({id: newId, name: name, status: status});
+        this.loggingService.logStatusChange(status)
+      }
+      removeAccById(id: number){
+        for (let i = 0; i < this.accounts.length; i++) {
+          if (this.accounts[i].id === id) {
+            this.accounts.splice(i, 1);
+              i--;
+          }
+        }
+      }
+      removeAccount(index: number){
+        this.accounts.splice(index , 1);
         this.loggingService.logStatusChange(status)
       }
       updateAccount(id: number, status: string) {

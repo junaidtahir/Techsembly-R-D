@@ -21,4 +21,10 @@ export class NewAccountComponent {
     this.accountService.addAccount(accountName, accountStatus)
     // this.LoggingService.logStatusChange(accountStatus)
   }
+  onRemoveAccount(index: number){
+    this.accountService.removeAccount(index);
+  }
+  removeAccountById(id: number){
+    this.accountService.removeAccById(id)
+  }
 }

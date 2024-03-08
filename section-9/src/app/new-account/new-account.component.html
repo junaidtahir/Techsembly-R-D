@@ -19,6 +19,11 @@
       (click)="onCreateAccount(accountName.value, status.value)">
       Add Account
     </button>
+    <button style="margin-left: 12px;" class="btn btn-primary"
+    (click)="onRemoveAccount(1)">Remove account (Testaccount)</button>
+    <br>
+    <button style="margin-top: 12px;" class="btn btn-primary"
+    (click)="removeAccountById(3)">Remove account (id: 3)</button>
   </div>
 </div>
 
