@@ -1,0 +1,11 @@
+<app-header (onTarget)="onTargetChanged($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="selectedRoute === 'recipes'; else appShoppingList"></app-recipes>
+      <ng-template #appShoppingList>
+        <app-shopping-list></app-shopping-list>
+      </ng-template>
+    </div>
+  </div>
+</div>
