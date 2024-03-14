@@ -1,9 +1,12 @@
 This project contains the following concepts:
--> Components & Databinding Deep Dive 
+-> Course Project - The Basics
+-> Course Project - Components & Databinding 
+-> Course Project - Directives
+-> Course Project - Services & Dependency Injection
+-> Course Project - Routing
+-> Course Project - Observables
 
-
-
-# CmpDatabindingStart
+# CourseProjectStartingProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0-rc.5.
 
