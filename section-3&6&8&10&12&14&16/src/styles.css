@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.ml-3 {
+    margin-left: 12px;
+}
+
+.mt-3 {
+    margin-top: 12px;
+}
+input.ng-touched.ng-invalid, 
+textarea.ng-touched.ng-invalid{
+    border: 1px solid red;
+}
