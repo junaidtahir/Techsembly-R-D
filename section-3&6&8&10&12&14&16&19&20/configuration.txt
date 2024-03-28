@@ -1,0 +1,6 @@
+auth service
+https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyD2tK_lX0eJjR_0KZZAkZGmmSH1PRX7BWQ
+https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyD2tK_lX0eJjR_0KZZAkZGmmSH1PRX7BWQ
+
+datastorage-service:
+https://ng-routing-28a6d-default-rtdb.firebaseio.com/recipes.json
